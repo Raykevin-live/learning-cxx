@@ -6,10 +6,6 @@
 
 int main(int argc, char **argv) {
     // TODO: 在控制台输出 "Hello, InfiniTensor!" 并换行
-<<<<<<< HEAD
     std::cout <<"Hello, InfiniTensor!" <<std::endl;
-=======
-    std::cout << "Hello, InfiniTensor!" << std::endl;
->>>>>>> de5529a17cc0af3fc915dbb86ea5d49e6a3cd7ab
     return 0;
 }
