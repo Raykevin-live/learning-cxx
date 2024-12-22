@@ -1,5 +1,5 @@
 #include "../exercise.h"
-
+#include<cstring>
 // READ: 枚举类型 <https://zh.cppreference.com/w/cpp/language/enum>
 
 // `enum` 是 C 的兼容类型，本质上其对应类型的常量。
@@ -37,7 +37,8 @@ ColorEnum convert_by_pun(Color c) {
 
     TypePun pun;
     // TODO: 补全类型双关转换
-
+    auto tmp = c;
+    std::memcpy(&pun.e, &tmp, sizeof(pun.e));
     return pun.e;
 }
 
